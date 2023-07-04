@@ -18,3 +18,10 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+before(function (){
+    cy.visit('/');
+});
+
+after(function (){
+    cy.clean_db();
+});

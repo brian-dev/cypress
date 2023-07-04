@@ -1,4 +1,14 @@
 {
-  "standard_user": "standard_user",
-  "sys_password": "secret_sauce"
+  "default_user": {
+    "first_name": "Test",
+    "last_name": "User",
+    "address": "123 Somewhere",
+    "city": "Over There",
+    "state": "TX",
+    "zip_code": "45678",
+    "phone": "1234567890",
+    "ssn": "423534645",
+    "default_user_name": "standard_user",
+    "default_password": "s3cr3t"
+  }
 }

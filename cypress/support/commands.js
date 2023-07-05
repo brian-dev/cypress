@@ -33,9 +33,9 @@ Cypress.Commands.add('create_account', (test_accounts) => {
     cy.get('[id="customer.address.zipCode"]').type(test_accounts.default_user.zip_code);
     cy.get('[id="customer.phoneNumber"]').type(test_accounts.default_user.phone);
     cy.get('[id="customer.ssn"]').type(test_accounts.default_user.ssn);
-    cy.get('[id="customer.username"]').type(test_accounts.default_user_name);
-    cy.get('[id="customer.password"]').type(test_accounts.default_password);
-    cy.get('[id="repeatedPassword"]').type(test_accounts.default_password);
+    cy.get('[id="customer.username"]').type(test_accounts.default_user.default_user_name);
+    cy.get('[id="customer.password"]').type(test_accounts.default_user.default_password);
+    cy.get('[id="repeatedPassword"]').type(test_accounts.default_user.default_password);
     cy.get('input').contains('Register').click();
 })
 

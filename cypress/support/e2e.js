@@ -15,13 +15,16 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+import './api'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
-before(function (){
+beforeEach(function (){
+    cy.fixture('users.json').then(test_accounts => {this.test_accounts = test_accounts;
+    })
     cy.visit('/');
 });
 
-after(function (){
-    cy.clean_db();
+afterEach(function (){
+    cy.api_clean_db();
 });

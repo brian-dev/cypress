@@ -20,5 +20,8 @@
   "homepage": "https://github.com/brian-dev/cypress#readme",
   "devDependencies": {
     "cypress": "^12.16.0"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
   }
 }

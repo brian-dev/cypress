@@ -1,5 +1,5 @@
 describe('Create New User - UI', function (){
-    before(function (){
+    beforeEach(function (){
         cy.create_account(this.test_accounts, 'default')
     })
     it('Create default user', function (){
